@@ -1,3 +1,10 @@
+/**
+ * Author: Will Lewis | wlewis16
+ * File: Star.java
+ * This class will handle the creation of all stars
+ */
+
+
 import java.util.Random;
 
 public class Star {
@@ -10,6 +17,12 @@ public class Star {
     private double radius;
     private double luminosity;
 
+    /**
+     * Create a new star, the type of which is determined using real data
+     * (i.e. the chance of creating an O type star is 1 in 3,000,000)
+     * Then, given the type of the star, calculate its mass, temperature,
+     * radius, and luminosity.
+     */
     public Star() {
         Random r = new Random();
         int highRand = 3000001;
@@ -38,14 +51,26 @@ public class Star {
         }
     }
 
+    /**
+     * return the star's type
+     * @return StarType
+     */
     public StarType getType(){
         return this.type;
     }
 
+    /**
+     *
+     * @return the star's mass
+     */
     public double getMass(){
         return this.mass;
     }
 
+    /**
+     *
+     * @return the star's luminosity
+     */
     public double getLuminosity(){
         return this.luminosity;
     }
