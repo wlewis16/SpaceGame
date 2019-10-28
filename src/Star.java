@@ -9,7 +9,7 @@ import java.util.Random;
 
 public class Star {
 
-    enum StarType {O, B, A, F, G, K, M};
+    enum StarType {O, B, A, F, G, K, M}
 
     private StarType type;
     private double temp;
