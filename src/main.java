@@ -6,7 +6,7 @@
 public class main {
 
     public static void main(String[] args) {
-        System.out.println("Generating stars...");
+        System.out.println("Generating stars...\n");
         Star star;
         int numberO = 0;
         int numberB = 0;
@@ -15,24 +15,94 @@ public class main {
         int numberG = 0;
         int numberK = 0;
         int numberM = 0;
+
+        boolean printedO = false;
+        boolean printedB = false;
+        boolean printedA = false;
+        boolean printedF = false;
+        boolean printedG = false;
+        boolean printedK = false;
+        boolean printedM = false;
+
         for(int i = 0; i < 3000000; i++){
             star = new Star();
             if(star.getType() == Star.StarType.O){
                 numberO++;
-                System.out.println("Mass: " + star.getMass());
-                System.out.println("Luminosity: " + star.getLuminosity());
+                if(!printedO) {
+                    System.out.println("O TYPE: ");
+                    System.out.println("Mass (solar masses): " + star.getMass());
+                    System.out.println("Luminosity (solar luminosities): " + star.getLuminosity());
+                    System.out.println("Temperature (kelvin): " + star.getTemperature());
+                    System.out.println("Radius (solar radii): " + star.getRadius());
+                    System.out.println();
+                    printedO = true;
+                }
             }else if(star.getType() == Star.StarType.B){
                 numberB++;
+                if(!printedB) {
+                    System.out.println("B TYPE: ");
+                    System.out.println("Mass (solar masses): " + star.getMass());
+                    System.out.println("Luminosity (solar luminosities): " + star.getLuminosity());
+                    System.out.println("Temperature (kelvin): " + star.getTemperature());
+                    System.out.println("Radius (solar radii): " + star.getRadius());
+                    System.out.println();
+                    printedB = true;
+                }
             }else if(star.getType() == Star.StarType.A){
                 numberA++;
+                if(!printedA) {
+                    System.out.println("A TYPE: ");
+                    System.out.println("Mass (solar masses): " + star.getMass());
+                    System.out.println("Luminosity (solar luminosities): " + star.getLuminosity());
+                    System.out.println("Temperature (kelvin): " + star.getTemperature());
+                    System.out.println("Radius (solar radii): " + star.getRadius());
+                    System.out.println();
+                    printedA = true;
+                }
             }else if(star.getType() == Star.StarType.F){
                 numberF++;
+                if(!printedF) {
+                    System.out.println("F TYPE: ");
+                    System.out.println("Mass (solar masses): " + star.getMass());
+                    System.out.println("Luminosity (solar luminosities): " + star.getLuminosity());
+                    System.out.println("Temperature (kelvin): " + star.getTemperature());
+                    System.out.println("Radius (solar radii): " + star.getRadius());
+                    System.out.println();
+                    printedF = true;
+                }
             }else if(star.getType() == Star.StarType.G){
                 numberG++;
+                if(!printedG) {
+                    System.out.println("G TYPE: ");
+                    System.out.println("Mass (solar masses): " + star.getMass());
+                    System.out.println("Luminosity (solar luminosities): " + star.getLuminosity());
+                    System.out.println("Temperature (kelvin): " + star.getTemperature());
+                    System.out.println("Radius (solar radii): " + star.getRadius());
+                    System.out.println();
+                    printedG = true;
+                }
             }else if(star.getType() == Star.StarType.K){
                 numberK++;
+                if(!printedK) {
+                    System.out.println("K TYPE: ");
+                    System.out.println("Mass (solar masses): " + star.getMass());
+                    System.out.println("Luminosity (solar luminosities): " + star.getLuminosity());
+                    System.out.println("Temperature (kelvin): " + star.getTemperature());
+                    System.out.println("Radius (solar radii): " + star.getRadius());
+                    System.out.println();
+                    printedK = true;
+                }
             }else if(star.getType() == Star.StarType.M){
                 numberM++;
+                if(!printedM) {
+                    System.out.println("M TYPE: ");
+                    System.out.println("Mass (solar masses): " + star.getMass());
+                    System.out.println("Luminosity (solar luminosities): " + star.getLuminosity());
+                    System.out.println("Temperature (kelvin): " + star.getTemperature());
+                    System.out.println("Radius (solar radii): " + star.getRadius());
+                    System.out.println();
+                    printedM = true;
+                }
             }
         }
         System.out.println("Number of O type stars: " + numberO);
